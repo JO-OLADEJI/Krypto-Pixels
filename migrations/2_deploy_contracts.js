@@ -1,5 +1,5 @@
-const SimpleStorage = artifacts.require("./SimpleStorage.sol");
+const PixelPizzles = artifacts.require("./PixelPizzles.sol");
 
 module.exports = (deployer) => {
-  deployer.deploy(SimpleStorage);
+  deployer.deploy(PixelPizzles);
 };

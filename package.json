@@ -1,0 +1,26 @@
+{
+  "name": "pixel-pizzles",
+  "version": "1.0.0",
+  "description": "smart contract for the pixel pizzles nft project",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joshua-Oladeji/Pixel-Pizzles.git"
+  },
+  "author": "Joshua Oladeji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joshua-Oladeji/Pixel-Pizzles/issues"
+  },
+  "homepage": "https://github.com/Joshua-Oladeji/Pixel-Pizzles#readme"
+}
