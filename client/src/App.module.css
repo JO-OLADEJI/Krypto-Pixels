@@ -1,22 +1,22 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+@font-face {
+  font-family: 'bulky pixels';
+  src: url('./fonts/BULKYPIX.TTF');
 }
 
-.App-logo {
-  height: 40vmin;
+@font-face {
+  font-family: 'pixel';
+  src: url('./fonts/Pixel.ttf');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: 'mobile font';
+  src: url('./fonts/MobileFont.ttf');
 }
 
-.App-link {
-  color: #09d3ac;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
