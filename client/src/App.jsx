@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import PixelPizzlesContract from './contracts/PixelPizzles.json';
+import PixelMatrixContract from './contracts/PixelMatrix.json';
 import { connectWallet, getCurrentWalletConnected } from './utils/connect-wallet';
 import { loadContract } from './utils/load-contract';
 import styles from './App.module.css';
@@ -28,7 +28,7 @@ const App = () => {
   useEffect(() => {
     async function getWalletInfo() {
       const { address } = await getCurrentWalletConnected();
-      // const instance = await loadContract(PixelPizzlesContract);
+      // const instance = await loadContract(PixelMatrixContract);
       setAddress(() => address);
       // setContract(() => instance);
     }
@@ -38,7 +38,7 @@ const App = () => {
 
   const connectWalletPressed = async () => {
     const wallet = await connectWallet();
-    // const instance = await loadContract(PixelPizzlesContract);
+    // const instance = await loadContract(PixelMatrixContract);
 
     setAddress(() => wallet.address);
     // setContract(() => instance);

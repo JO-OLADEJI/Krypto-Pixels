@@ -4,7 +4,7 @@ import styles from './Home.module.css';
 const Home = (props) => {
   return (
     <main className={styles['home']}>
-      <h1>Homepage of Pixel Pizzles</h1>
+      <h1>Homepage of Pixel Matrix</h1>
     </main>
   );
 }

@@ -1,5 +1,5 @@
-const PixelPizzles = artifacts.require("./PixelPizzles.sol");
+const PixelMatrix = artifacts.require("./PixelMatrix.sol");
 
 module.exports = (deployer) => {
-  deployer.deploy(PixelPizzles);
+  deployer.deploy(PixelMatrix);
 };
