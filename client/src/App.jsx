@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import PixelMatrixContract from './contracts/PixelMatrix.json';
 import { connectWallet, getCurrentWalletConnected } from './utils/connect-wallet';
 import { loadContract } from './utils/load-contract';
 import styles from './App.module.css';
@@ -10,7 +9,6 @@ import Minter from './components/Minter';
 
 const App = () => {
   const [address, setAddress] = useState('');
-  const [contract, setContract] = useState(null);
 
   // listeners
   const addWalletListener = () => {
@@ -22,15 +20,13 @@ const App = () => {
           setAddress('');
         }
       });
-    } else { } // threathen the broweser :)
+    } else { }
   }
 
   useEffect(() => {
     async function getWalletInfo() {
       const { address } = await getCurrentWalletConnected();
-      // const instance = await loadContract(PixelMatrixContract);
       setAddress(() => address);
-      // setContract(() => instance);
     }
     getWalletInfo();
     addWalletListener();
@@ -38,10 +34,7 @@ const App = () => {
 
   const connectWalletPressed = async () => {
     const wallet = await connectWallet();
-    // const instance = await loadContract(PixelMatrixContract);
-
     setAddress(() => wallet.address);
-    // setContract(() => instance);
   };
 
 
@@ -56,13 +49,11 @@ const App = () => {
           <Route exact path="/">
             <Home 
               address={address}
-              contract={contract}
             />
           </Route>
           <Route path="/mint">
             <Minter
               address={address}
-              contract={contract}
             />
           </Route>
         </Switch>

@@ -1,5 +1,54 @@
 .home {
-  padding-top: 2rem;
   text-align: center;
   font-family: 'Nanum Brush Script', cursive;
+}
+
+.type {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: teal;
+}
+
+.big-logo {
+  margin: auto;
+  width: 20rem;
+  height: 6rem;
+  border: 2px solid black;
+  border-radius: .5rem;
+  background-color: white;
+}
+
+.roadmap {
+  background-color: tomato;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hunter > div {
+  /* width: 100%; */
+  /* height: 100%; */
+  background-color: crimson;
+}
+
+.warrior > div {
+  background-color: yellowgreen;
+}
+
+.mage > div {
+  background-color: tomato;
+}
+
+.ninja > div {
+  background-color: turquoise;
 }
