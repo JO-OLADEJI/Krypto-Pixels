@@ -1,42 +1,48 @@
 import React from 'react';
 import styles from './Nav.module.css';
 import { Link } from 'react-router-dom';
-import openseaLogo from '../assets/openseaLogo.png';
+import openseaLogo from '../assets/opensea-logo.png';
 
 const Nav = (props) => {
   return (
     <nav className={styles['nav']}>
-      <div className={styles['logo']}>
-        <Link className={styles['logo-lk']} to="/">
-          <h2>Pixel Matrix</h2>
-        </Link>
+      <div className={styles['socials']}>
+        <a href="">
+          <i className="fab fa-discord" />
+        </a>
+        <a href="">
+          <i className="fab fa-twitter" />
+        </a>
+        <a href="https://opensea.io/" title="Buy on OpenSea" target="_blank">
+          <img 
+            className={styles['opensea-badge']}
+            src="https://storage.googleapis.com/opensea-static/Logomark/Badge%20-%20Available%20On%20-%20BW.png" 
+            alt="Available on OpenSea" 
+          />
+        </a>
       </div>
       <div className={styles['nav-links']}>
-        <Link className={styles['link']} to="/mint">
-          mint
-        </Link>
-        <Link className={styles['link']}>
-          about
-        </Link>
-        <Link className={styles['link']}>
-          team
-        </Link>
-        <Link className={styles['link']}>
-          pitrix
-        </Link>
+        <div className={styles['logo']}>
+          <Link className={styles['logo-link']} to="/">
+            <h2>Pixel Matrix</h2>
+          </Link>
+        </div>
+        <div>
+          <Link className={styles['link']} to="/mint">
+            mint
+          </Link>
+          <Link className={styles['link']}>
+            about
+          </Link>
+          <Link className={styles['link']}>
+            team
+          </Link>
+          <Link className={styles['link']}>
+            pitrix
+          </Link>
+        </div>
       </div>
       <div className={styles['btns']}>
-        <div className={styles['ext-links']}>
-          <a href="">
-            <i className="fab fa-discord" />
-          </a>
-          <a href="">
-            <i className="fab fa-twitter" />
-          </a>
-          <a href="">
-            <img src={openseaLogo} alt="opensea" />
-          </a>
-        </div>
         <button
           onClick={async (e) => {
             e.preventDefault();

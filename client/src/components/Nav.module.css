@@ -1,27 +1,49 @@
 .nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 1.5rem 5vw;
-  /* position: sticky; */
-  /* top: 0; */
-  box-shadow: 0 2px 5px #8a8a8a;
+  padding: 2rem 5vw;
 }
 
-.logo {
-  font-family: 'bulky pixels';
+.socials {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.logo-lk {
+.socials i {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.socials a {
+  display: inline-block;
+}
+
+.socials a:nth-child(2) {
+  margin-left: 1.2rem;
+  margin-right: .5rem;
+}
+
+.opensea-badge {
+  width: 10rem;
+}
+
+.logo {
+  font-family: 'bulky pixels';
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+.logo-link {
   text-decoration: none;
-  color: #318260;
+  color: white;
 }
 
 .nav-links {
   font-family: 'Nanum Brush Script', cursive;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -43,43 +65,20 @@
   align-items: center;
 }
 
-.ext-links {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.ext-links a{
-  display: inline-block;
-  margin: 0 .5rem;
-  font-size: 1.5rem;
-}
-
-.ext-links a:nth-child(1) {
-  color: #7289da;
-}
-.ext-links a:nth-child(2) {
-  color: #00acee;
-}
-
-.ext-links img {
-  width: 1.8rem;
-}
-
 .btns button {
-  background-color: white;
+  background-color: transparent;
   padding: .6rem 1rem;
   font-family: 'bulky pixels';
   font-size: .9rem;
-  border: 1px solid #318260;
+  border: 2px solid #2858b1;
   border-radius: .5rem;
   cursor: pointer;
   margin-left: .5rem;
-  color: #318260;
-  transition: all .3s ease-in;
+  color: #2858b1;
+  transition: all .2s ease-in-out;
 }
 
 .btns button:hover {
-  background-color: #318260;
+  border: 2px solid white;
   color: white;
 }

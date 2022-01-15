@@ -15,13 +15,6 @@ const Home = (props) => {
           </div>
         </Parallax>
 
-        {/* <Parallax y={[-20, 20]} className={styles['big-logo']}>
-          <img 
-            src="" 
-            alt="" 
-          />
-        </Parallax> */}
-
         <Parallax 
           y={[10, -10]} 
           className={`${styles['typ']} ${styles['hunter']}`}>
