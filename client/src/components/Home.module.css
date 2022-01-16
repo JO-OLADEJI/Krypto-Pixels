@@ -4,10 +4,65 @@
 }
 
 .type {
-  height: 40vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 2rem 10vw;
+}
+
+.warrior .nft-art,
+.ninja .nft-art {
+  order: 2;
+}
+
+.warrior .nft-description,
+.warrior .nft-description {
+  order: 1;
+}
+
+.nft-art img {
+  width: 25rem;
+}
+
+.nft-art {
+  width: 50%;
+}
+
+.nft-description {
+  width: 50%;
+  height: 100;
+  text-align: left;
+  padding-left: 3rem;
+  padding-right: 1rem;
+}
+
+.nft-description h2 {
+  font-family: 'bulky pixels';
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.nft-description p {
+  color: white;
+  font-size: 1.9rem;
+}
+
+.hunter p {
+  /* color: #97CA31; */
+  color: #2858B1;
+}
+
+.warrior p {
+  color: #f02626;
+}
+
+.mage p {
+  color: #d306d3;
+}
+
+.ninja p {
+  color: #8b8b8b;
 }
 
 .background {
@@ -18,37 +73,10 @@
   background-color: teal;
 }
 
-.big-logo {
-  margin: auto;
-  width: 20rem;
-  height: 6rem;
-  border: 2px solid black;
-  border-radius: .5rem;
-  background-color: white;
-}
-
 .roadmap {
   background-color: tomato;
   height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.hunter > div {
-  /* width: 100%; */
-  /* height: 100%; */
-  background-color: crimson;
-}
-
-.warrior > div {
-  background-color: yellowgreen;
-}
-
-.mage > div {
-  background-color: tomato;
-}
-
-.ninja > div {
-  background-color: turquoise;
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Nav.module.css';
 import { Link } from 'react-router-dom';
-import openseaLogo from '../assets/opensea-logo.png';
 
 const Nav = (props) => {
   return (
